@@ -52,7 +52,7 @@ user.greetingTwo = function () {
 // console.log(user.greeting());
 // console.log(user.greetingTwo());
 
-// another TRICK AND ADVANCE
+// another TRICKY AND ADVANCE
 
 // const instaUser = new Object()  // SINGLETON OBJECT
 const instaUser = {}; // NON SINGLETON OBJECT
