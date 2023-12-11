@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Element</title>
+  </head>
+  <body style="background-color: #212121; color: antiquewhite"></body>
+  <script>
+    const create = document.createElement("div");
+    create.className = "common";
+    create.id = Math.round(Math.random() * 10 + 1); // just for fun
+    create.style.backgroundColor = "red";
+    create.style.color = "white";
+    create.style.padding = "10px";
+    // create.innerHTML = "Hello! i am created by javascript";
+    const addText = document.createTextNode(
+      "Hello! i am created by javascript"
+    );
+    create.appendChild(addText);
+    document.body.appendChild(create);
+    console.log(create);
+  </script>
+</html>

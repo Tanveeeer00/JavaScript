@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM learning</title>
+    <style>
+      .bg-black {
+        background-color: #212121;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <h1 id="title" class="heading">
+        Dom learning with Luix <span style="display: none">learning</span>
+      </h1>
+      <h3>Lorem, ipsum dolor1.</h3>
+      <h3>Lorem, ipsum dolor2.</h3>
+      <h3>Lorem, ipsum dolor3.</h3>
+      <input type="password" id="inp" />
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
+        distinctio soluta hic consequatur nulla fugiat! Dolor a itaque quo
+        consectetur eum illo.
+      </p>
+      <ul>
+        <li class="class-item">one</li>
+        <li class="class-item">two</li>
+        <li class="class-item">three</li>
+        <li class="class-item">four</li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- 
+Run in console for better understanding
+
+//selector
+document.getElementByclassName('title')
+document.getElementById('title')
+document.getElementById('title').id
+
+document.getElementById('title').class // it will return undefined
+document.getElementById('title').className // it will return right answer because dom accept className instead of class
+
+document.getElementById('title').getAttribute() // throw error because we need to tell which attribute we need
+document.getElementById('title').getAttribute('id')
+document.getElementById('title').getAttribute('class')
+document.getElementById('title').setAttribute('class','test') // it will overwrite on heading so do not make mistake and write both. 
+document.getElementById('title').setAttribute('class','test heading')
+
+//constaining in variable
+const title = document.getElementById('title') // it will now store in variable so we can access easily.
+title 
+
+// for styling
+title.style.backgroundColor = "red"
+title.style.padding = "15px"
+title.style.borderRadius = "15px"
+
+// get content 
+// textContent / innerText / innerHTML
+title.textContent // it will show every content even hidden part.
+title.innerText // it will show only those content which is displayed on screen.
+title.innerHTML // it will show all content withhhhhh html tags.
+
+//QuerySelector // select only first one.
+document.querySelector('h1')
+document.querySelector('#title')
+document.querySelector('.heading')
+document.querySelector('input')
+document.querySelector('input[type='password']')
+
+// querySelectory on unorderList (ul)
+document.querySelector("ul")
+document.querySelectot("li")
+const color = document.querySelectot("li")
+color.style.backgroundColor = "green"
+color.style.padding = "10px"
+color.innerHTML
+color.innerHTML="ten"
+
+// querySelectorAll
+document.querySelectorAll("li")   // it will give nodeList. nodeList have forEach loop function
+const temp = document.querySelectorAll("li")
+temp
+temp.style.color="red" // it will throw error so we need to select from node list with index
+temp[0].style.color="red"
+
+temp.forEach(function(l){              // it's not an array, but in prototype there is foreach function by default so we can use foreach. we cannot map and at all
+    l.style.backgroundColor="green"
+})
+
+document.getElementsByClassName('class-item')      // it will give HTMLCollection. 
+const tempList = document.getElementsByClassName('class-item')
+tempList
+tempList.forEach(function(li){console.log}) // error cause HTMLCollection does not have even forEach loop function 
+
+// Convert into array
+Array.from(tempList)
+const myArr = Array.from(tempList)
+myArr.forEach(funstion(li){li.style.color="green"})
+-->
