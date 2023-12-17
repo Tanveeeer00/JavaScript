@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: aliceblue">
+    <h1>Hello Interval</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // setInterval(function,time in sec , para)  // para option same goes for timeOut. // setInterval run continously and setTimeout runs only once.
+
+    const sayDate = function (str) {
+      console.log(str, Date.now());
+    };
+
+    document.querySelector("#start").addEventListener("click", function () {
+      const intervalId = setInterval(sayDate, 1000, "hi");
+      document.querySelector("h1").innerHTML = "Timer Start";
+      document.querySelector("#stop").addEventListener("click", function () {
+        document.querySelector("h1").innerHTML = "Timer Stop";
+        clearInterval(intervalId);
+        console.log("STOPPED");
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: white solid;
+      }
+      body {
+        background-color: #212121;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Value</th>
+        <th>State</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td>UNSENT</td>
+        <td>Client has been created. open() not called yet.</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>OPENED</td>
+        <td>open() has been called.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>HEADERS_RECEIVED</td>
+        <td>send() has been called, and headers and status are available.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>LOADING</td>
+        <td>Downloading; responseText holds partial data.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>DONE</td>
+        <td>The operation is complete</td>
+      </tr>
+    </table>
+    <div id="prof"></div>
+    <!-- <img id="userAvatar" src="" alt="User avatar" /> -->
+  </body>
+
+  <script>
+    requestUrl = "https://api.github.com/users/hiteshchoudhary";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestUrl);
+    xhr.onreadystatechange = function () {
+      // for tracking we use onreadystatechange method
+      console.log(xhr.readyState);
+      // console.log(this.responseText)
+      if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText); // it will always give in strings so we need to convert into object using, JSON.parse
+        // console.log(typeof data);
+        // console.log(data.followers);
+        const prof = document.querySelector("#prof");
+        prof.textContent = data.followers;
+      }
+    };
+    xhr.send();
+  </script>
+</html>
+
+<!-- incomplete card 
+
+    const photo = data.avatar_url;
+    // document.getElementById("userAvatar").src = photo;
+    
+    prof.textContent = data.followings;
+    
+    const profileSet = document.createElement("img");
+    // profileSet.ATTRIBUTE_NODE("src");
+    profileSet.id = "avatar";
+    const bodyPhoto = document.querySelector("prof");
+    bodyPhoto.appendChild(profileSet);
+    bodyPhoto.style.backgroundColor = "red";
+    
+    bodyPhoto.style.boderColor = "white";
+    bodyPhoto.style.boderSize = "3px";
+    bodyPhoto.style.width = "300px";
+    // profileSet.src; // profileSet.appendChild(photo);          
+-->
