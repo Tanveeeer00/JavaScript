@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string function</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>this an heading</h1>
+    </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorem similique, recusandae reiciendis
+            necessitatibus odio veritatis accusantium quisquam optio sapiente molestias repellendus eligendi? Atque quam
+            quas veniam ullam? Non possimus quis dolorum voluptates hic esse quam suscipit magnam dolore, quidem dolor
+            consectetur necessitatibus magni repudiandae quibusdam ad placeat eligendi alias recusandae quaerat, in a.
+            Molestias veritatis unde, impedit fugit quos quia aut consequatur odio error ut sed sapiente expedita
+            laboriosam! Beatae mollitia provident aliquid consequatur unde ea dolores ex ad optio accusamus repellat
+            minus possimus aperiam incidunt quisquam voluptatem tenetur excepturi velit aut consectetur architecto
+            molestias, quam necessitatibus. Ducimus, temporibus.</p>
+    </div>
+    <script>
+        var str="This is a string";
+        console.log(str)
+        var position=str.indexOf('is');
+        console.log(position)
+        var posit=str.lastIndexOf('is');
+        console.log(posit)
+        var substr=str.slice(0,9);
+        console.log(substr)
+        var string=str.substr(1,5);
+        console.log(string)
+        var sub=str.substring(0,5);
+        console.log(sub)
+       var replaced=str.replace('string','tanveer');
+       console.log(str)
+       console.log(replaced)
+        console.log(str.toUpperCase(string));
+        console.log(str.toLowerCase(this));
+        var newstring=str.concat(' new string')
+        console.log(newstring)
+        var naya= str.concat(' hello');
+        console.log(naya)
+        var strspace ="    this is    whitespace   ";
+        console.log(strspace)
+        console.log(strspace.trim())
+        var char2= str.charAt(3);
+        console.log(char2)
+        var char2=str.charCodeAt(5);
+        console.log(char2)
+        console.log(str[5])
+    </script>
+</body>
+
+</html>

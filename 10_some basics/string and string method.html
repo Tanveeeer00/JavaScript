@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string and string method</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+    </div>
+    <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deleniti, molestiae ex inventore harum libero
+            voluptas, totam itaque officia ratione quod possimus consequatur doloremque ab, cum delectus dolorum
+            quibusdam saepe facere! Ipsam autem veritatis recusandae?</p>
+    </div>
+    <script>
+        // var string="this";
+        var string="thi's";
+        console.log(string)
+        var name='tanveer';
+        var channel='codewithtanveer';
+        var message='tanveer is a good boy';
+        var temp=`${name} is a "nice" person 'and' he has a channel called ${channel}`;
+        console.log(string+name+channel+message)
+        console.log(temp)
+        var len= name.length;
+        console.log(`length of name is ${len}`)
+        console.log("hello\\world \n harry\tand\b tanveer")
+        var y = new String ("this");
+    console.log(y);
+    var x= new String("tanveer");
+    console.log(x)
+    document.getElementById('content').innerHTML ='<h3>this is an h3 heading</h3>'
+    document.getElementById('content').innerHTML='<h1>this is an heading</h1>'
+    </script>
+</body>
+
+</html>

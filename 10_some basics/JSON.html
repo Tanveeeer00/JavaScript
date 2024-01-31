@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim dolore natus quos eligendi repellat rerum
+            optio, consequatur minima hic nulla quam possimus ad, nostrum, veniam quaerat minus vitae eaque! Ex libero,
+            id ipsa in laudantium non sint. Earum, nam cum maxime sint adipisci error facilis dolorem aliquam
+            voluptatibus praesentium consequatur beatae natus explicabo aperiam tenetur perspiciatis, sit iusto!
+            Accusantium culpa reiciendis incidunt voluptatem quasi quam facilis voluptatum eum doloremque, sunt
+            consectetur aliquam molestiae illum id eligendi. Repudiandae consectetur asperiores numquam sunt tenetur.
+            Blanditiis odit quia doloribus dolores, laboriosam nam quos recusandae omnis delectus ut inventore obcaecati
+            debitis! Enim officia hic, doloremque quo id mollitia veritatis explicabo fuga sint temporibus ex cumque
+            consequatur optio possimus repellendus libero, est quaerat harum architecto molestiae rerum. Nemo, culpa ea!
+        </p>
+    </div>
+    <script>
+        // what is JSON?
+        // JSON stands for Javascript Object Notation
+        // JSON is a lightweight data interchange format
+        // JSON is a language independent
+        // JSON is slef describing and easy to understand 
+        let jsonObj={
+            name:"tanveer",
+            channel:"code with tanveer",
+            friend :"anjum",
+            food:"guavar"
+        }
+        console.log(jsonObj);
+        let myjson=JSON.stringify(jsonObj)
+        console.log(myjson);
+        myjsonstr=myjson.replace('tanveer','kanveer');
+        console.log(myjsonstr);
+        let obj=JSON.parse(myjsonstr);
+        console.log(obj);
+    </script>
+</body>
+
+</html>

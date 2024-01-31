@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Math object</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias veritatis eveniet perferendis. Saepe
+            omnis facere totam aspernatur perspiciatis incidunt obcaecati nemo, beatae necessitatibus nisi officia
+            similique corporis voluptatum recusandae eius quo. Magni, sint architecto. Ab exercitationem, tenetur ullam
+            sint saepe architecto! Praesentium architecto officia odit voluptates voluptatibus assumenda hic dolore
+            molestiae, nesciunt doloremque dignissimos repudiandae neque iure sunt atque aperiam nam veniam placeat
+            labore maxime est voluptatum pariatur. Laudantium maiores illum cum dicta repudiandae consequatur assumenda,
+            quibusdam, expedita suscipit obcaecati reprehenderit odit dolorem. Non expedita assumenda reprehenderit
+            dolorem neque deleniti repellendus nulla quia, optio sint consequuntur numquam suscipit maiores minima quis,
+            quibusdam, quisquam soluta cupiditate enim iusto vero earum accusantium! Provident aliquam porro asperiores
+            repellendus nisi cumque pariatur vel molestias?</p>
+    </div>
+    <script>
+        // printing the function from math object
+        let m =Math;
+        console.log(m);
+
+        // printing the constant from math object
+        console.log('the value of Math.E is ',Math.E);
+        console.log('the value of Math.PI is ',Math.PI);
+        console.log('the value of Math.LN2 is ',Math.LN2);
+        console.log('the value of Maht.SQRT1_2 is ',Math.SQRT1_2);
+        console.log('the value of MAth.LOG2E is ',Math.LOG2E);
+        // printing the function from math object
+        let a=35.5251;
+        let b=58;
+        console.log('the value of a and b is ',a,'and',b);
+        console.log('the value of a and b rounded is ',Math.round(a),'and',Math.round(b));
+        
+        // ceil and floor
+        console.log('5.8 rounded up to nearest interger is ',Math.ceil(5.8));
+        console.log('5.8 rounded down to nearest interger is ',Math.floor(5.8));
+
+        //raised power
+        console.log('3 raised to the power of 2 is ',Math.pow(3,2));
+        console.log('2 raised to the power of 10 is ',Math.pow(2,10));
+        console.log('1 raised to the power of 2 is ',Math.pow(1,2));
+
+        // square root 
+        console.log('square root of 36 is ',Math.sqrt(36));
+        console.log('square root of 64 is ',Math.sqrt(64));
+        console.log('square root of 50 is ',Math.sqrt(50));
+
+        // absolute (Abs) function
+        console.log('Absolute value of 5.66 is ',Math.abs(5.66));
+        console.log('Absolute value of -5.66 is ',Math.abs(-5.66));
+
+        // Trigonometric function
+        console.log('the value of sin(pi) is ',Math.sin(Math.PI/2));
+        console.log('the value of tan(pi) is ',Math.tan(Math.PI/2));
+        console.log('the value of cos(pi) is ',Math.cos(Math.PI/2));
+
+        // MIN and MAX functions
+        console.log('Minimum vlaue of 8,7,5,4 is ',Math.min(8,7,5,4));
+        console.log('Minimum value of 58,45,15,65 is ',Math.min(58,45,15,65));
+        console.log('Maximum value of 5,8,2,7 IS ',Math.max(5,8,2,7));
+        console.log('Maximum value of 25,32,45,15 is ',Math.max(25,32,45,15));
+
+        // Generating a Random Number
+       let r=Math.random();
+       console.log('the random number is ',r);
+    //    random number b/w (a,b)= a+(b-a)*Math.random();
+    let a1=50;
+    let b1=60;
+    let r50_60=a1+(b1-a1)*Math.random();
+    console.log('the random number is ',r50_60);
+    </script>
+</body>
+
+</html>

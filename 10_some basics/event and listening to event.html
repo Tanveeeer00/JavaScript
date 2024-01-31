@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events and listening to events</title>
+    <style>
+        #btn{
+            border: 2px solid black;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: large;
+        }
+        #button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+        <div class="content">
+            <h3>onchange</h3>
+            An HTML element has been changed
+            <h3>onclick</h3>
+            The user clicks an HTML element
+            <h3>onmouseover</h3>
+            The user moves the mouse over an HTML element
+            <h3>onmouseout</h3>
+            The user moves the mouse away from an HTML element
+            <h3>onkeydown</h3>
+            The user pushes a keyboard key
+            <h3>onload</h3>
+            The browser has finished loading the page
+            <h2>browser events</h2>
+            <h3>click</h3>
+            <h3>contextmenu</h3>
+            <h3>mouseover/mouseout</h3>
+            <h3>mousedown/mouseup</h3>
+            <h3>mousemove</h3>
+            <h3>submit</h3>
+            <h3>focus</h3>
+            <h3>DOCContentLoaded</h3>
+            <h3>transitioned</h3>
+            <div id="button">
+            <button id="btn" onclick="togglehide()">show/hide</button>
+            </div>
+            <p id="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores dicta ea illum error aliquam
+                distinctio asperiores reprehenderit officiis quaerat suscipit id inventore vel debitis necessitatibus
+                ipsum, laborum excepturi totam quos obcaecati nesciunt accusamus, vitae, voluptatum dolorem. Illum vel
+                facilis, quidem sunt optio facere magni aliquid sequi fugiat reprehenderit obcaecati nemo sed. Ut
+                praesentium esse temporibus eligendi adipisci molestiae optio laborum consectetur voluptate deserunt et
+                nemo aut, pariatur quidem ipsam, velit, saepe quo doloribus. Voluptas quis dolore libero optio
+                cupiditate illo consectetur unde porro consequuntur quasi, sit accusantium placeat. Laudantium molestiae
+                culpa minima velit error nemo reprehenderit quaerat, modi ullam iste, veniam reiciendis, sunt asperiores
+                optio vel quos cumque exercitationem ex eos accusantium delectus quis consectetur cupiditate.
+                Exercitationem, impedit eaque dolorum repellat quae facere doloribus nulla ipsam sint consequuntur
+                cumque recusandae reprehenderit quisquam natus est itaque aliquid quo voluptate fuga quibusdam velit
+                aliquam! Tenetur, quisquam. Recusandae voluptatum, ipsum ad nemo, rerum obcaecati perspiciatis velit
+                illo, sunt reiciendis excepturi quia iure ex dolor nihil voluptates. Dolor, earum consectetur,
+                necessitatibus doloremque placeat laborum repudiandae ab culpa ex reiciendis alias eius asperiores
+                dolorum amet quibusdam voluptatem rem. Rem perspiciatis magni deleniti odit? Veritatis consequuntur
+                nostrum non explicabo architecto quisquam repudiandae vero vitae eaque dolore optio, cupiditate neque
+                earum!
+            </p>
+        </div>
+    </div>
+    <script>
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            alert('mouse inside')
+        });
+        para.addEventListener('mouseout',function run(){
+            alert('mouse now went outside')
+        });
+    </script>
+</body>
+
+</html>

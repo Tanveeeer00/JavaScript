@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and objects</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a heading</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum unde facilis laudantium, nulla ducimus
+        eos quis rerum veniam soluta quod eaque, blanditiis dignissimos impedit tenetur culpa. Excepturi qui recusandae
+        hic. Voluptates quis, ratione voluptatem in quae at voluptas? Nulla quos aliquid magni quam rem sequi vel eum
+        ipsa, maxime doloribus deserunt, quia fugit perspiciatis nisi dolor provident odio accusamus ullam, eligendi
+        hic. Veniam perspiciatis perferendis obcaecati quisquam recusandae molestiae sint, odit amet blanditiis laborum
+        quaerat debitis fuga atque! Laudantium commodi ullam aut quam voluptatibus explicabo, atque quibusdam quis
+        reprehenderit quasi fugit consequuntur rerum blanditiis accusamus neque dolores, eius fuga culpa unde vel alias!
+        Delectus facere doloribus nostrum, modi quos quisquam error commodi esse dicta saepe dolor pariatur quas aliquid
+        maxime excepturi assumenda. Magnam soluta cupiditate voluptatem veritatis reiciendis necessitatibus, iure
+        quibusdam dicta sint nihil modi architecto ullam sed, consectetur vitae distinctio ea excepturi inventore
+        molestias possimus atque illo alias! Architecto quia ut placeat quae, magni voluptas, eos culpa in sint illum
+        iste maiores officiis excepturi recusandae error exercitationem facere tempore eligendi perspiciatis fugiat
+        quas? Enim, ea explicabo. Nostrum minima ab delectus eaque ipsam! Ipsam, ratione iste! Sapiente assumenda, esse
+        eaque rerum qui ipsam eos labore, nisi ullam minima optio blanditiis quam earum doloremque rem odio consectetur
+        est quo suscipit praesentium? Nobis in facere fugiat veritatis, ratione commodi tempore assumenda debitis
+        maiores eligendi porro, nisi corporis id corrupti perspiciatis reprehenderit. Ea, ducimus a!</p>
+</body>
+<script>
+    // there are two types of value used in javascript:-
+    // 1.primitive and 2.refrence
+    // object used to store various keyed collection and more complex and entities
+    // object created using the object () constructor
+    // special kind of object known as Arrays. 
+    // An array is a special variable,which can hold more than one value at a time.
+    // arrays like.....Let names=[1,2,4,"Tanveer" undefined];
+    // we can also create arrays with help of a new keyword,like.....let names=new Array(42,2,4,"Tanveer",undefined);
+    // if we put spaces in key then,we have to use =['         ']
+
+    //  primitives
+    let myvar=34;
+    let myvar1="string";
+    let myvar2=true;
+    let myvar3=null;
+    let myvar4=undefined;
+
+    // Object
+    let employee={
+        name:"Tanveer",
+        salary:12,
+        channel:"codewithtanveer",
+        channel2:"programmingwithtanveer",
+        "channel 3":"learningwithtanveer",
+    }
+    console.log(employee);
+    // channel 3 used in console we have to put employee['channel 3']
+
+    let names=[1,2,4,"Tanveer",undefined];
+    console.log(names);
+
+    let name=new Array(42,2,4,"Taanveer",undefined);
+    console.log(name[3]);
+    // [3] is index 
+
+    let naam=new Array(23);
+    console.log(naam);
+
+    console.log(names.length);
+
+    name=name.sort();
+    console.log(name);
+    
+    // push used in array
+    name.push("this is pused");
+    console.log(name);
+    </script>
+</html>

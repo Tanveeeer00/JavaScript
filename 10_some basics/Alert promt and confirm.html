@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interaction-Alert Prompt aND Confirm</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Alert,Prompt and Confirm</h1>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero obcaecati quisquam, porro iure ratione
+                totam illum ducimus nisi, reiciendis deleniti perspiciatis ea, nemo tempore eum recusandae
+                exercitationem quam incidunt facere doloribus soluta aperiam quibusdam nulla sit! Quis iste aspernatur
+                sequi laudantium fuga reiciendis id vel asperiores, eaque voluptatem corrupti eum adipisci maiores
+                quibusdam ex vero voluptatum dignissimos dolor delectus minima nam sapiente temporibus. Laborum, ut
+                earum quo mollitia in unde sunt deleniti numquam dolor vitae aliquam necessitatibus incidunt? Porro
+                ipsum iure non tenetur excepturi id sit voluptatum, sint itaque explicabo rem voluptatibus rerum esse
+                illum dolore quae sunt. Obcaecati porro quis voluptas placeat! Impedit repellat, laudantium obcaecati
+                repudiandae sunt adipisci nobis officiis! Consequatur nostrum similique in pariatur quas assumenda,
+                adipisci tempore vitae, ab eum veniam laborum. Commodi ipsam incidunt vero, iure doloribus recusandae
+                ipsum, harum quidem nostrum nam provident quasi tempora velit quam molestiae rem, hic unde impedit
+                natus? Reiciendis fugit in provident natus blanditiis repudiandae nesciunt illo obcaecati, tempore
+                recusandae? Voluptatibus repellendus iusto suscipit minima nesciunt eos ipsum iure maiores dolores,
+                quasi optio veritatis aspernatur nostrum illo numquam cupiditate officiis quos ex minus! Nobis, nulla
+                iure? Consequuntur quae recusandae quas aliquam similique, molestias ad iusto natus perferendis harum
+                necessitatibus consectetur aliquid sequi.</p>
+        </div>
+    </div>
+    <script>
+        // alert in browser javascript does not return anywhere
+        alert("this is message");
+
+        // prompt in javascript
+        let name = prompt("what is your name?", "guest");
+        console.log(name);
+
+        // confirm in javascript
+        let deletepost = confirm("do you really want to delete post");
+        if (deletepost) {
+            console.log("your post has been delete");
+        }
+        else {
+            console.log("your post has not been deleted");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATE AND TIME IN JAVASCRIPT</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: rgb(238, 199, 147);
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px 50px;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 10px 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Current Time is :- <span id="timer"></span>
+    </div>
+
+    <script>
+        console.log('This is date and time');
+        let now = new Date();
+        console.log(now);
+        let reference = new Date(1000);
+        console.log(reference);
+
+        let newlydate = new Date("2029-09-12");
+        console.log(newlydate);
+
+        // let newDate= new Date (year,month,Date,hours,minutes,seconds,milliseconds);
+        let newDate = new Date(3029,05,15,10,55,34,25);
+        console.log(newDate);
+        let mili= Date.now();
+        console.log(mili);
+        let yr = newDate.getUTCFullYear();
+        console.log("The year is ",yr);
+        let month= newDate.getUTCMonth();
+        console.log("The month is ",month);
+        let date=newDate.getUTCDate();
+        console.log("The date is ",date);
+        let hr=newDate.getUTCHours();
+        console.log("The hours is ",hr);
+        let min=newDate.getUTCMinutes();
+        console.log("The minutes is ",min);
+        let second=newDate.getUTCSeconds();
+        console.log("The seconds is ",second);
+        let millisecond = newDate.getUTCMilliseconds();
+        console.log("The milliseconds is ",millisecond);
+        let OTHER=newDate.getTimezoneOffset();
+        console.log("The UTC is ",OTHER);
+        newDate.setFullYear(2020);
+        console.log(newDate);
+        newDate.setMonth(08);
+        console.log(newDate);
+        newDate.setDate(04);
+        console.log(newDate);
+       setInterval(updateTime,1000);
+      function updateTime(){
+        timer.innerHTML=new Date();
+      }
+     
+    </script>
+
+</body>
+
+</html> 

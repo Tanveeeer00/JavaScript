@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cointainer">
+        <h1>This is a heading</h1>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quisquam aliquid voluptate
+                aspernatur maxime debitis totam, itaque quae nostrum optio eligendi. Corporis, a. Rerum distinctio
+                tempora aperiam rem quos architecto fuga laborum ullam provident quam neque, esse eius, quas, quidem
+                quisquam illum nemo blanditiis nisi? Porro nemo aliquam explicabo quae iusto aspernatur error optio
+                totam, dolore reiciendis. Unde, natus nisi dolorem exercitationem doloribus provident. Alias aspernatur,
+                modi officiis repellat voluptatem assumenda ut beatae eveniet quo impedit hic illo! Deserunt distinctio
+                tempora veritatis vel dignissimos repudiandae autem id cum velit iusto ducimus eaque vero, illum natus?
+                Culpa maxime neque ipsam itaque ducimus quis esse, aliquam quod, animi consequatur ratione dolorem.
+                Quaerat deserunt dolorem iste ratione magnam. Dignissimos adipisci voluptatibus odit, molestiae id
+                similique facere porro cupiditate?
+            </p>
+        </div>
+    </div>
+    <script>
+        function greet() {
+            console.log("good morning");
+        }
+        greet();
+        // arrow function
+        let greety = () => {
+            console.log('hello arrow');
+        }
+        greety();
+
+        let greeting = () =>
+            console.log('hello another arrow');
+        greeting();
+
+        // setTimeout
+        setTimeout(() => {
+            console.log('we are inside the settimeout')
+        }, 3000);
+
+        //   Object
+        let obj = {
+            names: ['anjum', 'tanveer', 'harry', 'rohan'],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log('kukdoo doo ' + student);
+                });
+            }
+        }
+        obj.speak();
+        let obj1 = {
+            greeted: 'good morning',
+            name: ['anjum', 'tanveer', 'harry', 'rohan'],
+            speak() {
+                this.name.forEach((bacche) => {
+                    console.log(this.greeted + bacche + ' kya kar rahe ho ');
+                });
+            }
+        }
+        obj1.speak();
+
+        let sum = (a, b) => {
+            return (a + b);
+        };
+        let minus = (a, b) =>
+            (a - b);
+
+        let half = a => (a / 2);
+    </script>
+</body>
+
+</html>

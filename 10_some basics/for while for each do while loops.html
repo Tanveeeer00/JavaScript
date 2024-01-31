@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for while for each do while loops</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>for,while,for each and do while loops</h1>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatibus ullam voluptatem aliquid ad
+                nihil delectus cupiditate tempora sequi sunt sed corrupti neque, ea, alias optio veritatis voluptate
+                iste facere saepe nobis. Quas in excepturi odit blanditiis distinctio beatae nulla quia, exercitationem
+                numquam sunt id aliquid nam vel a mollitia. Obcaecati excepturi eius quis optio ipsum! Sint esse at
+                dolor labore tempora et laboriosam consectetur ipsa molestiae. A suscipit est tenetur quod veniam
+                inventore possimus nemo omnis eum dolorum similique, doloremque totam assumenda aliquid corporis eius
+                velit mollitia? Libero iusto cupiditate a labore impedit eaque commodi adipisci hic reiciendis quo quis,
+                doloribus quaerat, itaque fugiat sequi asperiores pariatur, non dolorem suscipit debitis! Repellendus,
+                harum incidunt. Dolore, maiores obcaecati. Ipsam velit aut eos quas quisquam aliquid hic. Quasi nostrum
+                voluptates voluptas dignissimos et! Molestiae reiciendis unde obcaecati aliquid voluptatem, minima saepe
+                natus error optio incidunt iure veritatis cupiditate earum nihil, eum dolorem rem dignissimos officiis!
+                Nostrum ea assumenda veritatis, dolorem illo omnis quaerat enim consequatur sed non? Explicabo a dolorem
+                fugiat eligendi, quas sunt reiciendis ipsam natus similique sit? Voluptates recusandae sequi ipsum.
+                Voluptate perferendis itaque debitis quae laudantium animi pariatur, magnam possimus perspiciatis
+                doloremque nesciunt et modi, aliquid est eos.
+            </p>
+        </div>
+    </div>
+    <script>
+        console.log("hello world");''
+        
+        // for loops
+        let i=0;
+        for(i=0;i<3;i++){
+            console.log(i);
+        }
+       let friends=["anjum","tanveer","harry","rohan"];
+       for(index=0;index<friends.length;index++){
+           console.log("hello " +friends[index]);
+       }
+
+    //    for each loops
+       let friend=["anjum","tanveer","harry","rohan"];
+       friend.forEach(function f(element){
+           console.log("hello "+element+" to modern javascript") ;
+       });
+
+    //    for of loops
+       let dost=["anjum","tanveer","harry","rohan"];
+       for(element of dost){
+           console.log("or yaaro "+element+" to modern javascript again")
+       }
+
+       let employee={
+           name:"tanveer",salary:10214,channel:"code with tanveer"
+       }
+
+    //    for in
+     // Use this loop to iterate over objects in JavaScript
+       for(key in employee){
+           console.log(`the ${key} of employee is ${employee[key]}`);
+       }
+
+    //    while loop
+       let h=0;while(h<4){
+           console.log(`${h}is less than 4`);h++;
+       }
+     let k=0;while(k<5){
+         console.log(`${k}is less than 5`);k++;
+     }
+
+    //  do while loop
+    let j=35;
+    do{
+        console.log(`${j} is less than 4 and we are inside do while loop`);j++;
+    }while(j<4);
+    </script>
+</body>
+
+</html>

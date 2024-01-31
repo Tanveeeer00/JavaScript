@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+
+<body>
+    <H1>this is a heading</H1>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+            <li>more about us</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>another container Lorem ipsum dolor sit amet consectetur adipisicing elit. Id recusandae incidunt repellat
+            optio maiores velit iure praesentium explicabo quam, vitae, nisi cupiditate minima odit sapiente dolorum
+            facilis repudiandae est dignissimos quas similique voluptatum amet tenetur reprehenderit? Nihil sunt magni,
+            ipsum quam excepturi pariatur, non laboriosam, fugiat a recusandae ducimus doloribus totam debitis
+            repudiandae officiis nesciunt adipisci. Vel, ipsa officiis ipsam sapiente alias, deserunt nisi eos voluptas
+            delectus facere asperiores impedit a nostrum similique quas odio nam error iusto quae id laudantium, unde
+            totam! Iure nostrum iste blanditiis debitis nesciunt sed voluptatum similique maxime nobis delectus omnis,
+            odit necessitatibus, repellat ducimus perferendis! Non hic sunt aspernatur ex ipsa. Enim, provident! Nisi
+            aliquid accusantium, odio dolore repellendus quam explicabo modi. Incidunt culpa quia corrupti alias dolor
+            saepe minima dolores aspernatur architecto fuga, suscipit ratione amet totam placeat unde praesentium quos
+            nesciunt ducimus, dolore eum cupiditate laudantium officiis? Quod odio dicta pariatur repellat
+            necessitatibus inventore natus facilis recusandae quia! Est vitae iusto, assumenda maxime aliquid magni
+            delectus eius temporibus excepturi architecto labore magnam blanditiis cupiditate hic non adipisci,
+            doloremque error tempore repudiandae quis alias omnis obcaecati. Consectetur maxime dignissimos facilis
+            assumenda veniam optio ducimus dolorum, ad numquam harum blanditiis, eligendi odit nostrum sed labore
+            quaerat! Voluptates?</p>
+       
+
+        <script>
+            // the hmtl DOM(Document Object Model) is a standard object model and programming interface for html.it defines:-
+            // 1.the htyml element as objects
+            // 2.the properies of all html elements
+            // 3.the method to access all html elements
+            // 4.the events for all html elements
+             // in other words the DOM is standard for how to (GET),(CHANGE),(ADD)or(DELETE) HTML elements
+             
+       // if we write container[0] or containert[1] innerconsole we will get first hand and second hand container
+       // respectively.if yiu want to find all html element that match a specified css selector(ID, CLASS NAMES, TYPES,
+       // ATTRIBUTES, VALUE OF ATTRIBUTES, ETC)use the query selector().
+
+            let main = document.getElementById('main');
+            console.log(main);
+            let nav = document.getElementById('nav');
+            console.log(nav);
+            let container = document.getElementsByClassName('container');
+            console.log(container);
+            let sel=document.querySelector('.container');
+            console.log("selector return",sel);
+            let selected=document.querySelector('#nav>li');
+            console.log("selector return",selected);
+            // use querySelectorAll () to target the elements.for example if we want to select all ids.
+            let select=document.querySelectorAll('.container');
+            console.log("selector return",select)
+
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval and setTimeOut</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Javascript SetTimeOut , Cleartimeout and setinterval </h1>
+        <div class="content">
+
+            <p>Lorem <span id="timer"></span> dolor sit amet, consectetur adipisicing elit. Exercitationem accusamus
+                iusto eos architecto
+                unde provident voluptate illo? Ad recusandae, ab iste, mollitia labore adipisci corrupti aperiam facere
+                amet nobis accusamus qui eius iusto voluptatibus, quo earum animi minima praesentium veritatis laborum
+                quis ipsam? Sunt, quasi nisi alias ducimus possimus unde aliquid ullam numquam atque optio quis
+                perspiciatis. Nulla maxime nihil quae est impedit eligendi facilis voluptatum dolorum, id, error sit
+                assumenda. Enim eveniet eum deleniti quia eligendi esse sint, quis placeat illo fugiat sapiente in aut
+                accusantium vel ut dolore beatae voluptates autem, asperiores, magni corporis cupiditate laborum!
+                Perspiciatis iusto voluptate pariatur laboriosam voluptatibus voluptatum officia maiores veniam
+                architecto harum enim magni, obcaecati ratione odio praesentium in dignissimos sit suscipit perferendis.
+                Assumenda voluptatibus maxime eligendi qui dignissimos quibusdam, optio consequatur quidem? Sequi,
+                libero ut, eveniet minima repellendus consectetur sapiente eligendi recusandae maiores quidem animi quod
+                repellat laudantium temporibus id ipsum in reprehenderit est distinctio? Vero omnis, excepturi earum
+                delectus expedita sunt dolorem nesciunt accusamus magni fugiat odio cum ratione facilis ex molestiae
+                quisquam obcaecati officiis ipsam rem aspernatur quo sint officia tempore! Laborum illo, eos
+                necessitatibus impedit amet excepturi natus earum corrupti nemo dolores unde eligendi soluta quis
+                ducimus recusandae voluptatum quasi magni.</p>
+        </div>
+    </div>
+    <script>
+        console.log("This is a Tanveer");
+        // setTimeout -->Allows us to run the function once after the interval of time.
+        // clearTimeOut -->Allows us to run the function repeatly after the interval of time.
+
+        // setTimeout
+        function greety() {
+            console.log("hello world");
+        }
+        timerout = setTimeout(greety, 5000);
+        //  clearTimeout(timerout);
+
+        // clearTimeout
+        function greet(name, byetext) {
+            console.log("hello Good Morning " + name + " " + byetext);
+        }
+        timeout1 = setTimeout(greet, 5000, "harry", "take care");
+        console.log(timeout1);
+        clearTimeout(timeout1);
+
+        //  setinterval and clearInterval
+        function greeting(name, byetext) {
+            console.log("hello buddies " + name + " " + byetext);
+        }
+        intervalid = setInterval(greeting, 1000, "Tanveer", "take care")
+        console.log(intervalid);
+        // clearInterval(intervalid);
+
+       function displaytime(){
+           time=new Date();
+           console.log(time);
+           document.getElementById('timer').innerHTML=time;
+       }
+       intervalid=setInterval(displaytime,1000);
+       console.log(intervalid);
+       
+    </script>
+</body>
+
+</html>
