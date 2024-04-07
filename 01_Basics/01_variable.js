@@ -49,7 +49,7 @@ console.log(num);
 // Here, we declare the variable num. But, it has no value yet. Assign a value to it and run the code.
 
 let num1;
-num = 2;
+num1 = 2;
 console.log(num1);
 
 // Assign the value of another variable
